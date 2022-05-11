@@ -52,7 +52,7 @@ if uploaded_file:
     image = Image.open(uploaded_file)
     st.image(image)
     classify = st.button("Classify Image")
-    if classify:git
+    if classify:
         st.write("")
         st.write("Classifying...")
         label = predict(image.tobytes())
